@@ -1,5 +1,5 @@
 #include<stdio.h>
-// 素数和
+// 求素数和
 int main() {
     int x = 2;
     int cnt = 0;
