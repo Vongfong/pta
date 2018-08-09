@@ -1,10 +1,13 @@
 #include<stdio.h>
-
+// 素数和
 int main() {
     int x = 2;
     int cnt = 0;
     
-    while(cnt < 50) {
+    int n, m;
+    scanf("%d %d", &n, &m);
+    int sum = 0;
+    while(cnt <= 200) {
         int isPrime = 1;
         int i;
         for(i = 2; i < x; i++) {
@@ -16,13 +19,13 @@ int main() {
         
         if(isPrime == 1) {
             cnt++;
-            printf("%d\t", x);
-            if(cnt % 5 == 0) {
-                printf("\n");
+            if(cnt >= n && cnt <= m) {
+                sum += x;
             }
         }
         
         x++;
     }
+    printf("%d\n", sum);
     return 0;
 }
