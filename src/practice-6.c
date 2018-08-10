@@ -1,11 +1,15 @@
-#include <stdio.h>
+#include<stdio.h>
 
-// 7-13 输出倒三角图案
-int main(int argc, char **argv) {
-    printf("* * * *\n");
-    printf(" * * *\n");
-    printf("  * *\n");
-    printf("   *\n");
-
+// 7-15 厘米换算英尺英寸
+int main() {
+    int cm = 0;
+    
+    scanf("%d", &cm);
+    
+    int foot = cm / 30.48;
+    int inch = (cm - foot*30.48)*12 / 30.48;
+    
+    printf("%d %d", foot, inch);
+    
     return 0;
 }

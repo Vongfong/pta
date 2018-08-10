@@ -1,15 +1,13 @@
 #include<stdio.h>
 
-// 7-15 厘米换算英尺英寸
+// 7-1计算摄氏温度
 int main() {
-    int cm = 0;
+    int f = 0;
+    scanf("%d", &f);
     
-    scanf("%d", &cm);
+    int c = 5 * (f -32) / 9;
     
-    int foot = cm / 30.48;
-    int inch = (cm - foot*30.48)*12 / 30.48;
-    
-    printf("%d %d", foot, inch);
+    printf("Celsius = %d", c);
     
     return 0;
 }
