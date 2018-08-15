@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-// ÆæÅ¼¸öÊı
+// å¥‡å¶ä¸ªæ•°
 int main(int argc, char **argv) {
     int a = 0;
     int odd = 0, even = 0;

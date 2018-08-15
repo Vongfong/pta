@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-// ʱ�任��
+// 时间换算
 int main(int argc, char **argv) {
 	int bjt = 0;
 	int utc = 0;
